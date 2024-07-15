@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit_task.css') }}">
+    <title>Editar Tarefa</title>
+</head>
+<body style="background-color: #6A5ACD;"> 
+    <div class="container">
+        <h1>Editar Tarefa</h1>
+        <form action="{{ url_for('edit_task', task_id=task.id) }}" method="post">
+            <input type="text" name="title" value="{{ task.title }}" required>
+            <textarea name="text" required>{{ task.text }}</textarea>
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="{{ url_for('index') }}">Voltar</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6A5ACD; 
+    color: #fff; 
+}
+
+.container {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; 
+    text-align: center;
+}
+
+.add-task, .edit-added-task {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; 
+}
+
+.edit-added-task {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333; 
+    font-size: 14px; 
+    line-height: 1.6; 
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #6A5ACD; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+    background-color: #4B0082; 
+}
